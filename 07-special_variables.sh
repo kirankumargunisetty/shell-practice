@@ -10,3 +10,5 @@ echo "Who is running this script: $USER"
 echo "From which directory we are running: $PWD"
 echo "Present user home directory: $HOME"
 echo "PID of the current script: $$"
+sleep 5 &
+echo "PID of the background command running just now: $!"
