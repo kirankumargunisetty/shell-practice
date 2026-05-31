@@ -23,3 +23,4 @@ else
     else
         echo installing Postgresql is ... SUCCESS
     fi
+fi
