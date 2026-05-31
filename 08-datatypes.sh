@@ -12,8 +12,8 @@ echo "sum is: $SUM"
 #Array
 MOVIES=("RRR" "Varanasi" "Pushpa") # index always starts from 0
 
-echo "Movies are: ${MOVIES[@]}"
-echo "First Movie is : ${MOVIES[0]}"
-echo "second Movie is : ${MOVIES[1]}"
-echo "third Movie is : ${MOVIES[2]}"
-echo "fourth Movie is : ${MOVIES[3]}"
+echo "Movies are: ${MOVIES[@]}" # it prints all movies
+echo "First Movie is : ${MOVIES[0]}" # it print only 0th indext value
+echo "second Movie is : ${MOVIES[1]}" # it prints only 1st index value
+echo "third Movie is : ${MOVIES[2]}" # it prints only 2nd index value
+echo "fourth Movie is : ${MOVIES[3]}" # it print nothing because there is no 4th index value
