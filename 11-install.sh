@@ -9,13 +9,17 @@ if [ $USERID -ne 0 ]; then
 fi
 
 #echo "I am continuing..."
+dnf list installed postgresql
 
-echo "Installing Postgresql"
-dnf install postgresqll -y
-
-if [ $? -ne 0 ]; then
-    echo "Installing Postgresql is ... Failed"
-    exit 1
+if [ $? -eq 0 ]; then
+    echo "Postgresql is already installed... SKIPPING"
 else
-    echo installing Postgresql is ... SUCCESS
-fi
+    echo "Installing Postgresql"
+    dnf install postgresqll -y
+
+    if [ $? -ne 0 ]; then
+        echo "Installing Postgresql is ... Failed"
+        exit 1
+    else
+        echo installing Postgresql is ... SUCCESS
+    fi
