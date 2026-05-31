@@ -11,7 +11,7 @@ fi
 #echo "I am continuing..."
 
 echo "Installing Postgresql"
-dnf install postgresql -y
+dnf install postgresqll -y
 
 if [ $? -ne 0 ]; then
     echo "Installing Postgresql is ... Failed"
